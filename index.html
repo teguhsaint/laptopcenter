@@ -13,10 +13,300 @@
       crossorigin="anonymous"
     />
     <title>Laptop Center</title>
+    <style>
+          .card img {
+
+        width: 70%;
+        max-height: 200px;
+        margin-top: 50px;
+        transition-duration: 0.5s;
+    }
+
+    .card:hover img {
+
+        transform: scale(1.2);
+    }
+
+    .btn {
+      transition-duration: 0.5s;
+    }
+
+    .btm:hover {
+      transform: scale(1.2);
+    }
+
+    .foo {
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    margin-top: 50px;
+}
+    </style>
   </head>
 
-  <body>
+  <body style="background-color: rgb(243, 243, 243);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Digital<strong>Store</strong>
+          </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="d-flex ms-auto my-4 my-lg-0">
+            <input class="form-control me-2" type="search" placeholder="Cari Laptop" aria-label="Search">
+            <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+          </form> 
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Masuk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
+
+
+    <!--Awal Carousel-->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/foto1.png" class="d-block img-fluid" alt="Gambar 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/fototes2 (1).png" class="d-block img-fluid" alt="Gambar 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/fototes3 (1).png" class="d-block img-fluid" alt="Gambar 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+      <!--Akhir Carousel-->
+
+      <!--Awal Produk-->
+
+    <div class="mt-5 text-center text-dark">
+        <h2>Produk</h2>
+    </div>
+      <div class="container">
+                <div class="row mt-5">
+            <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus ROG G713QE R7R5B6TO</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, ratione.</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 19.900.000</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LENOVO LEGION 5i</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, totam!</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 21.899.000</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI Titan GT77 12UHS-056ID</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, eligendi.</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 80.000.000</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ASUS ZENBOOK PRO DUO</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, incidunt!</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 54.000.000</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple MacBook Air M1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, perspiciatis?</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 13.075.000</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-sm-4 mt-3">
+                <div class="card text-center" style="align-items: center;">
+                    <img src="./image/produk6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ALIENWARE X15 R2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi!</p>
+                        <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Rp 53.299.000</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+          <div class="mt-5 text-center text-dark">
+        <h2>Mengapa Memilih Kami ?</h2>
+    </div>
+      
+      <div class="container">
+        <div class="row mt-5" >
+          <div class="col-sm-4">
+             <div class="card-body text-center">
+               <h5 class="card-title">Team Berpengalaman</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+          </div>
+          <div class="col-sm-4">
+             <div class="card-body text-center">
+               <h5 class="card-title">Fast Respond</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+            
+          </div>
+          <div class="col-sm-4">
+             <div class="card-body">
+               <h5 class="card-title">Layanan 24 Jam</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Go somewhere</a>
+             </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
+
+
+      <!--Akhir Produk-->
+<footer class="bg-dark text-center text-white foo">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0 mt-5">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white">Maya Dewi</a>
+  </div>
+  <!-- Copyright -->
+</footer>
     <!-- Js Bootstrap  -->
+  
     <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+  </body>
 </html>
